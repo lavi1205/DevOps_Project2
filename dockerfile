@@ -5,11 +5,11 @@ RUN dnf -y distro-sync
 RUN yum install -y httpd \
  zip\
  unzip
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page289/nomad-force.zip /var/www/html/
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page289/Nomad Force Free Website Template - Free-CSS.com.zip /var/www/html/
 WORKDIR /var/www/html/
-RUN unzip nomad-force.zip
-RUN cp -rf /nomad-force/* .
-RUN rm -rf nomad-force nomad-force.zip
+RUN unzip Nomad Force Free Website Template - Free-CSS.com.zip
+RUN cp -rf /Nomad Force Free Website Template - Free-CSS.com/* .
+RUN rm -rf Nomad Force Free Website Template - Free-CSS.com Nomad Force Free Website Template - Free-CSS.com.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
  
