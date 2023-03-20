@@ -1,7 +1,7 @@
 FROM  centos:latest
 LABEL MAINTAINER THETHINH
 RUN dnf -y --disablerepo '*' --enablerepo=extras swap centos-linux-repos centos-stream-repos
-RUN dnf -y distro-syncnomad-force
+RUN dnf -y distro-sync
 RUN yum install -y httpd \
  zip\
  unzip
