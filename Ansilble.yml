@@ -1,10 +1,10 @@
 - hosts: all
   tasks:
-  #  - name: stop container
-  #    shell: docker container stop mydockercontainer
-  #  - name: remove container
-  #    shell: docker container rm mydockercontainer
-  #  - name: remove docker image
-  #    shell: docker image rmi lavi1205/docker_webapp
+   - name: stop container
+     shell: docker container stop mydockercontainer
+   - name: remove container
+     shell: docker container rm mydockercontainer
+   - name: remove docker image
+     shell: docker image rmi lavi1205/docker_webapp
    - name: create new container
      shell: docker container run -itd --name thethinh -p 9000:80 lavi1205/docker_webapp
