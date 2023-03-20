@@ -5,7 +5,7 @@ RUN dnf -y distro-sync
 RUN yum install -y httpd \
  zip\
  unzip
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page289/Nomad Force Free Website Template - Free-CSS.com.zip /var/www/html/
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page289/nomad-force.zip Force Free Website Template - Free-CSS.com.zip /var/www/html/
 WORKDIR /var/www/html/
 RUN unzip Nomad Force Free Website Template - Free-CSS.com.zip
 RUN cp -rf /Nomad Force Free Website Template - Free-CSS.com/* .
