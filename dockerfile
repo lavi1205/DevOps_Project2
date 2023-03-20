@@ -7,9 +7,9 @@ RUN yum install -y httpd \
  unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page289/nomad-force.zip Force Free Website Template - Free-CSS.com.zip /var/www/html/
 WORKDIR /var/www/html/
-RUN unzip Nomad Force Free Website Template - Free-CSS.com.zip
-RUN cp -rf /Nomad Force Free Website Template - Free-CSS.com/* .
-RUN rm -rf Nomad Force Free Website Template - Free-CSS.com Nomad Force Free Website Template - Free-CSS.com.zip
+RUN unzip Force Free Website Template - Free-CSS.com.zip
+RUN cp -rf Force Free Website Template - Free-CSS.com/* .
+RUN rm -rf Force Free Website Template - Free-CSS.com Nomad Force Free Website Template - Free-CSS.com.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
  
