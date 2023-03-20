@@ -8,7 +8,7 @@ RUN yum install -y httpd \
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page289/nomad-force.zip /var/www/html/
 WORKDIR /var/www/html/
 RUN unzip nomad-force.zip
-RUN cp -rf /nomad-force /var/www/html/nomad-force 
+RUN cp -rf /nomad-force/* .
 RUN rm -rf nomad-force nomad-force.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
