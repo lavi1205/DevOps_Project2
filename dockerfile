@@ -8,7 +8,7 @@ RUN yum install -y httpd \
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/piuma.zip /var/www/html/
 WORKDIR /var/www/html/
 RUN unzip piuma.zip
-RUN cp -rf /piuma /var/www/html/piuma .
+RUN cp -rf /piuma /var/www/html/piuma 
 RUN rm -rf piuma piuma.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
